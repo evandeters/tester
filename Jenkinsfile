@@ -1,5 +1,7 @@
 pipeline {
-    agent "Ubuntu 22"
+    agent {
+        label "Ubuntu 22"
+    }
     options {
         skipStagesAfterUnstable()
     }
